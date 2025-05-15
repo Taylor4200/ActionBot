@@ -1,5 +1,4 @@
 import React, { RefObject, useEffect } from "react";
-import type { Message } from "../pages/index";
 
 interface ChatProps {
   messages: Message[];
