@@ -1,5 +1,11 @@
 import React, { RefObject, useEffect } from "react";
 
+// ✅ Define Message type locally to fix build error
+interface Message {
+  role: "user" | "assistant";
+  content: string;
+}
+
 interface ChatProps {
   messages: Message[];
   loading: boolean;
@@ -66,4 +72,4 @@ export default function Chat({ messages, loading, messagesEndRef }: ChatProps) {
       `}</style>
     </div>
   );
-} 
+}
