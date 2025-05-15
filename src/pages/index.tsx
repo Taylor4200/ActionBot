@@ -3,11 +3,6 @@ import Sidebar from "@/components/Sidebar";
 import ChatWindow from "@/components/ChatWindow";
 import MessageInput from "@/components/MessageInput";
 
-interface Message {
-  role: "user" | "assistant";
-  content: string;
-}
-
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground">
